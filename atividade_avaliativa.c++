@@ -35,11 +35,11 @@ class Somar{
     while(segundototal > 59 || minutototal > 59  || horatotal > 23)
     {
         if(segundototal > 59){
-            Minuto++;
+            minutototal++;
             segundototal = segundototal - 60;
         }
         if(minutototal > 59){
-            Hora++;
+            horatotal++;
             minutototal = minutototal - 60;
         }
         if(horatotal > 23){
