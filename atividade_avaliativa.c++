@@ -10,6 +10,8 @@ class Horario{
     int Hora;
     int Minuto;
     int Segundo;
+    int dia = 0;
+    int sobra = 0;
 
     //Método
     void horarios(){
@@ -17,14 +19,6 @@ class Horario{
           cout << "" << endl;
           cout << "" << endl;
     }
-};
-
-class Somar{
-
-    //Atributos
-    public:
-    int dia = 0;
-    int sobra = 0;
 
     //Método
     void soma(Horario hora1, Horario hora2)
@@ -59,7 +53,7 @@ int main(){
 
     Horario hora1;
     Horario hora2;
-    Somar total;
+    Horario total;
 
     cout << "que horas sao?!" << endl;
     cin >> hora1.Hora;
